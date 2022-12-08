@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scy note1</title>
+</head>
+
+<body>
+    <center>
+        <h1>This is the note of UI Development--html</h1>
+        <p>author--scy</p>
+        <a href="scy2.html">note2</a>
+        <a href="scy3.html">note3</a>
+    </center>
+    <h2>散装笔记</h2>
+    <p>1: 查询不同浏览器的html语句兼容性网站--<b>caniuse.com</b></p>
+    <p>2: W3C html语言标准: <strong>1.Html结构</strong>     <strong>2.css表现</strong>    <strong>3.js行为</strong></p>
+    <p>3: Html基本语法: <strong>1.常规语法（双标记）</strong>  <strong>2.空标记（单标记）</strong></p>
+
+    <h3>快捷键</h3>
+    <p>ctrl+f： 查找</p>
+    <p>ctrl+d: 多选多个相同标签</p>
+    <p>alt+鼠标左键： 多个光标</p>
+    <p>'alt+w': 快速加分段符号</p>
+    <p>'alt+shift+↓': 快速向下复制</p>
+    <p>'ctrl+/':注释</p>
+    <p>'*'快速创建多个</p>
+    <p>'大于号'创建父子关系</p>
+    <p>'ctrl+enter':直接回车</p>
+    <p>'***'+{}:直接输入内容</p>
+
+    <hr>
+    
+    <h2>标签</h2>
+    <h3>基础标签</h3>
+    <p>1. 'h+num'：标题标签 </p>
+    <p>2. 'p'：分段</p>
+    <p>3. 'hr': 横线</p>
+    <p>4. <b>'strong'</b>或者'b': 加粗，强调</p>
+    <p>5. <b>'em'</b>或者'i'：倾斜</p>
+    <p>6. <b>'del'</b>或者's': 删除线</p>
+    <p>7. 'u'：下划线</p>
+    <p>8. 'sub': 下标</p>
+    <p>9. 'sup': 上标</p>
+    <p>10. 'br\': 分行</p>
+    <p>11.'img':图片</p>
+
+    <h3>特殊标签</h3>
+    <p>1. 'div': 用来划分区域，独占一行</p>
+    <p>2. 'span': 用来文本独立修饰</p>
+
+
+    <hr>
+
+    <h2>标签属性</h2>
+    <h3>线标签属性</h3>
+    <p>1. 'color'</p>
+    <p>2. 'width'</p>
+    <p>3. 'align': 依靠方向</p>
+    <p>4. 'noshade'</p>
+
+    <hr color="red", width="300px", align="left", noshade="True">
+
+    <h3>图片标签属性</h3>
+    <p>'alt':当图片加载失败时显示的提示</p>
+    <p>'title':移动鼠标上时显示的标题</p>
+    <p>'width','height'</p>
+
+    <h2>特殊符号</h2>
+    <p>大于号：& gt</p>
+    <p>小于号：& lt</p>
+    <p>空格： & nbsp或& emsp</p>
+    <p>版权©：& copy</p>
+    <p>商标™：& trade, & reg</p>
+    
+    <hr>
+
+    <h2>列表</h2>
+    <p><h3>1. 有序列表</h3>
+        <ol type="I">
+            <li>'ol': ordered list</li>
+            <li>'li': list</li>
+            <li>'type':序号类型,1,a,A,i,I</li>
+            <li>'start':开始数，只能是数字</li>
+        </ol>
+    </p>
+
+    <p><h3>2.无序列表</h3>
+        <ul type="circle">
+            <li>'ul':unordered list</li>
+            <li>'type':disc,circle,square,none</li>
+        </ul>
+    </p>
+
+    <p>
+        <h3>3. 自定义列表</h3>
+        <dl>
+            <dd>This is mks</dd>
+            <dt><img src="./pic/mks.jpg" width="100px" height="100px"></dt>
+        </dl>
+
+        <dl>
+            <dd>This is me</dd>
+            <dt><img src="./pic/me.png" width="100px" height="100px"></dt>
+        </dl>
+
+        <dl>
+            <dd>This is 500</dd>
+            <dt><img src="./pic/500.png" width="100px" height="100px"></dt>
+        </dl>
+
+    <hr>
+
+    <h2>超链接</h2>
+    'a':超链接标签<br>
+    'href': 链接属性<br>
+    'target':跳转窗口，'_self','_blank' <br>
+    比如：<a href="http://bilibili.com" target="_blank">bilibili</a> <br>
+    <a href="scy.html" target="_blank">note</a> <br>
+
+    <hr>
+
+    <h2>Table表格</h2>
+    <table border="1" width="300" height="10" bordercolor="black" align="left" cellspacing="0">
+        <tr>
+            <td>name</td>
+            <td>content</td>
+        </tr>
+        <tr>
+            <td>'table'</td>
+            <td>标签</td>
+        </tr>
+        <tr>
+            <td>'tr'</td>
+            <td>行</td>
+        </tr>
+        <tr>
+            <td>'td'</td>
+            <td>列</td>
+        </tr>
+        <tr>
+            <td>'border'</td>
+            <td>边框</td>
+        </tr>
+        <tr>
+            <td>'align'</td>
+            <td>位置</td>
+        </tr>
+        <tr>
+            <td>'bordercolor'</td>
+            <td>边框颜色</td>
+        </tr>
+        <tr>
+            <td>'bgcolor'</td>
+            <td>背景颜色</td>
+        </tr>
+        <tr>
+            <td>'cellspacing'</td>
+            <td>单元格距离</td>
+        </tr>
+        <tr>
+            <td>'cellpadding'</td>
+            <td>单元格与内容距离</td>
+        </tr>
+        <tr>
+            <td>'rowspan','colspan'</td>
+            <td>合并单元格</td>
+        </tr>
+    </table>
+    
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h3>example</h3>
+    <table border="1" width="300" height="150" bordercolor="black" align="left" cellspacing="0">
+        <tr>
+            <td width="50" align="center">name</td>
+            <td width="100" > </td>
+            <td width="50" align="center">birthday</td>
+            <td width="100"> </td>
+        </tr>
+        <tr>
+            <td align="center">id</td>
+            <td colspan="3"></td>
+        </tr>
+        <tr>
+            <td align="center">address</td>
+            <td colspan="3"></td>
+        </tr>
+    </table>
+
+    <br><br><br><br><br><br><br>
+
+    <h2>表单</h2>
+    <form action="http://wwww.baidu.com" method="post">
+        账号：<input type="text" placeholder="输入正确值" name="username">
+        密码：<input type="text" placeholder="password" name="password">
+        <input type="submit" value="OK">
+        <button type="submit">OK</button>
+    </form>
+
+</body>
+</html>

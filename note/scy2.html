@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scy note2</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        * {
+            margin: 10;
+            padding: 0;
+            font-size: 16;
+            font-family: 宋体;
+        }
+        .cls {
+            color: blue;
+        }
+        #box {
+            color: white;
+            background-color: black;
+        }
+        a:link {
+            color: black;
+        }
+        a:visited {
+            color: brown;
+        }
+        a:hover {
+            color: blue;
+        }
+        a:active {
+            color: aqua;
+        }
+
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>This is the note2 of UI Development--css</h1>
+        <p>author--scy</p>
+        <a href="scy.html">note1</a>
+        <a href="scy3.html">note3</a>
+    </center>
+
+    <h2>选择器</h2>
+    属性优先级: !important &gt 其他 <br>
+    <div class="cls">类选择器: class, <b>注意style内的class要加点.</b></div>
+    <div id="box">id选择器: 注意id前要加#</div>
+    群组选择器: 用逗号隔开 <br>
+    后代选择器: 空格隔开 <br>
+    伪类选择器: link-visited-hover-active example: <a href="scy.html" target="_blank">note1</a><br>
+
+    <hr>
+
+    <h2>FONT</h2>
+    粗体: lighter, normal, bold, bolder <br>
+    斜体: italic, oblique, normal <br>
+    水平居中: text-align, justify(两端对齐)<br>
+    垂直居中: line-heightbr <br>
+    字符间距: letter-spacing <br>
+    词间距: word-spacing <br>
+    首行缩进: text-indent 2em--空出两字符<br>
+    文本修饰: text-decoration--(下划线:underline, 上划线:overline, 无修饰none, 删除线:line-through) <br>
+    font: 合并  斜体-加粗-大小-字体
+
+
+    <h2>文本属性</h2>
+    text-transfrom: capitalize(首字母大写)    lowercase(全小写)   uppercase(大写字母)
+
+
+    <h2>列表属性</h2>
+    list-style
+
+    <h2>背景图片</h2>
+    图片固定在浏览器固定位置:  background-attachment:fixed
+
+    <h2>浮动属性</h2>
+    float: left right <br>
+    clear: 不允许有浮动 <br>
+
+    <h2>盒子模型</h2>
+    对div标签: <br>
+    padding:内边距      -2-上下，左右   -3-上，左右，下     -4-上，右，下，左<br>
+    boder:边框 <br>
+    margin: 外边距 <b>0 auto--居中</b>       -2-上下，左右   -3-上，左右，下     -4-上，右，下，左<br>
+    margin垂直方向取最大值,水平方向相加。 <br>
+
+    <h2>溢出属性</h2>
+    overflow: visable, hidden, scroll--滚动条,auto,inherit-继承<br>
+    overflow-x/-y:指定方向 <br>
+
+    text-overflow: clip/ellipsis(省略号) <br>
+
+    <h2>空余属性</h2>
+    white-space:  <br>
+    nowrap--不换行 <br>
+    pre: 标签，预格式化文本 <br>
+    pre-wrap: 显示空格，回车，换行 <br>
+    pre-line: 显示回车，不显示空格，换行 <br>
+
+    <h2>定位</h2>
+    position: stastic/relative/absolute/fixed/sticky <br>
+
+    <h2>浮动问题</h2>
+    伪元素
+    <pre>
+        **::after{
+            content:"";
+            clear:both;
+            display:block;
+            width: 0;
+            height: 0;
+            visibility: hidden;
+        }
+    </pre>
+
+    <h2>窗口自适应</h2>
+    html,body{height:100%} <br>
+
+    <h2>表单</h2>
+    <h3>单选框</h3>
+    input type="radio", 同一组需统一取名 <br>
+    选中文字或标签: label <br>
+    默认选择: checked <br>
+
+    <h3>复选框</h3>
+    input type="checkbox" <br>
+
+    <h3>上传文件</h3>
+    input type=“file” <br>
+
+    <h3>下拉菜单</h3>
+    select: size/multiple <br>
+    option: 选项 , value(传给后端的值)/select(默认选择)<br>
+
+    <h3>多行文本输入框</h3>
+    textarea <br>
+    resize: vertical/horizaintal/both/none <br>
+
+    <h3>字段集</h3>
+    fieldset <br>
+    legend: 缺口展示内容 <br>
+
+
+</body>
+
+</html> 

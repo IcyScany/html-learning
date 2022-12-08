@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* 滚动条设置 */
+::-webkit-scrollbar{
+    display: none;
+}
+
+html, body{
+    height: 100%;
+}
+ul{
+    list-style: none;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+header{
+    height: 45px;
+    background-color: gray;
+}
+
+header ul{
+    display: flex;
+    overflow: auto;
+}
+
+header ul li{
+    line-height: 45px;
+    flex-shrink: 0;
+    padding: 0 10px;
+}
+
+header ul li:hover{
+    background-color: rgb(243, 174, 84);
+    color: aliceblue;
+}
+
+section{
+    flex: 1;
+    display: flex;
+    overflow: auto;
+}
+
+section ul{
+    width: 85px;
+    background-color: gainsboro;
+    overflow: auto;
+}
+
+section ul li{
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 14px;
+}
+
+section ul li:hover{
+    background-color: rgb(209, 204, 204);
+    color: rgb(53, 71, 207);
+}
+
+section>div{
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    /* 行间距 */
+    align-content: flex-start;
+    text-align: center;
+    overflow: auto;
+}
+
+section .content>div img{
+    width: 60px;
+    height: 50px;
+    margin-top: 11px;
+}
+section .content>div{
+    height: 101px;
+    width: 33.33%;
+
+}
+
+footer{
+    height: 35px;
+    background-color: gray;
+}

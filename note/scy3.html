@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scy note3</title>
+</head>
+<body>
+    <center>
+        <h1>This is the note of UI Development--H5+css3</h1>
+        <p>author--scy</p>
+        <a href="scy1.html">note1</a>
+        <a href="scy2.html">note2</a>
+        <style>
+            .title{
+                width: 100px;
+                height: 30px;
+                line-height: 30px;
+                text-align: center;
+                border: 3px solid black;
+                font-weight: bolder;
+                font-size: 30px;
+            }
+        </style>
+    </center>
+    
+    <div class="title">H5</div>
+    <h2>语义化标签</h2>
+    header,section,footer,  nav,main,aside <br>
+    figure(独立流内容), article(独立内容)
+
+    <h2>新增标签</h2>
+    <h3>audio</h3>
+    controls: 控制栏 <br>
+    loop: 循环 <br>
+    autoplay: 自动播放 <br>
+    muted: 静音播放 <br>
+
+    <h3>video</h3>
+    poster: 预览图 <br>
+
+    <h3>增强表单</h3>
+    form <br>
+    <pre>
+        type={
+            color,number,email,url,date,month,week,time,datetime-local,
+            tel(拨号),
+            search(搜索意义表单),
+            range(滑动条表单)
+        }
+    </pre>
+
+    autofocus: 自动聚焦 <br>
+    required: 必填项，不能为空 <br>
+    multiple: 可输入一个或多个值 <br>
+    pattern: 正则化表达
+
+    <h3>选项列表</h3>
+    datalist->option
+
+    <hr>
+
+    <div class="title">css3</div>
+    <h2>层级选择器</h2>
+    >:亲子代 <br>
+    +:后一元素 <br>
+    ~:之后所有兄弟节点 <br>
+
+    <h2>属性选择器</h2>
+    []:所有类型(如class) <br>
+    [**=**]:完全等于 <br>
+    [**~=**]:包含即匹配 <br> <br>
+    class^=b 以此开头的 <br>
+    class$=b 以此结尾的 <br>
+    class*=b 包含某个字符的 <br>
+
+    <h2>结构伪类选择器</h2>
+    :last_child, :first-child, :nth-child(n), <br>
+    :nth-child((2n/2n+1)、(even/odd))(奇偶数) <br>
+    :only-child, empty <br>
+    :root <br>
+
+    <h2>目标伪类选择器</h2>
+    :target
+
+    <h2>状态伪类选择器</h2>
+    :enabled, :disabled, :focus, :checked <br>
+    ::selection
+
+    <h2>否定伪类选择器</h2>
+    :not()
+
+    <h2>动态伪类选择器</h2>
+    link, visited, active, hover
+
+    <h2>文本阴影</h2>
+    text-shadow: px,px,px, color
+
+    <h2>盒子阴影</h2>
+    box-shadow: inset(内阴影)
+
+    <h2>圆角边框</h2>
+    border-radius: px/%
+
+    <h2>怪异盒模型</h2>
+    box-sizing: <br>
+    普通盒模型: content-box <br>
+    怪异盒模型: border-box 
+
+    <h2>弹性盒</h2>
+    1 适合移动端布局 <br>
+    2 display: flex <br>
+    3 默认横向排列 (flex-direction: column, row, column-reverse, row-reverse) <br>
+    4 行内元素变block <br>
+    5 仅一个元素时 margin:auto 变为居中 <br>
+    6 justify-content(主轴对齐方向): center, flex-start/end, space-between, space-around <br>
+    7 align-items(侧轴对齐方式): center, flex-start/end <br>
+    8 拆行: flex-wrap: wrap <br>
+    9 行间距: align-content: center <br>
+    10 项目对齐方式: align-self: flex-start/flex-end/center/baseline/stretch <br> 
+    11 项目顺序调整: order: 序号 <br>
+    12 项目剩余宽高: flex:1 (占满剩余空间或比例) <br>
+    13 flex-shrink: 是否允许挤压(0/1)
+
+    <h2>多列显示</h2>
+    column-count <br>
+    column-gap: 列间距 <br>
+    column-rule: 列分割线 <br>
+    column-fill: 列高  auto/balance <br>
+    column-width: 列宽 <br>
+    column-span: 跨列显示  none/all
+    break-inside: avoid(避免内容打断)
+
+    <h2>响应式布局</h2>
+    @media screen and (min-width:***px) <br>
+    orientation: portrait(竖屏)/landspace(横屏) <br>
+
+    <h2>rem布局</h2>
+    rem: 相对于根元素html的字体大小
+
+    <h2>渐变</h2>
+    线性渐变: linear-gradient(to (direction / deg), color, color,...) <br>
+    径向渐变: radial-gradient(center,shape,size,color...)
+
+    <h2>过渡</h2>
+    transition, 例: transition: all 2s liner 2s; <br>
+    transition: 属性， 时间， 效果， 延迟 <br>
+    transition-property/duration/delay/timing-function <br>
+    <br> 透明度: opacity <br>
+    平移: transform:translate(X/Ypx) <br>
+    缩放: transform: scale(X/Y), transform-origin(中心位置) <br>
+    旋转: transform: rotate(3D:X/Y/Z or 2D:deg) <br>
+    倾斜: transform: skew()
+
+    <h2>关键帧动画</h2>
+    库: animate.css <br>
+    animation: mymove time 动画 delay-time infinite(无限循环) alternate <br>
+    animation-fill-mode: forwards/backwards <br>
+    transform-style: preserve-3D 3D效果 <br>
+    关键帧跳跃 step-end, step-start <br>
+    申明动画 <pre>
+        @keyframes mymove{
+            %{   }
+            %{   }
+            %{   }
+        }
+    </pre>
+
+
+    <h2>网格布局</h2>
+    display: grid/ inline-grid <br>
+    grid-template-rows/columns: % px/// repeat(auto-fill, % px) /// fr <br>
+    grid-row/column-gap: 间距 <br>
+    grid-template-areas: 合并单元格 <br>
+
+
+
+</body>
+</html>
